@@ -1,0 +1,9 @@
+#!/bin/sh
+updates=$(find ${XDG_DATA_HOME:-$HOME/.local/share}/mail/*/INBOX/new/* -type f 2>/dev/null| wc -l 2>/dev/null)
+
+if [ $updates -gt 0 ]
+then
+	echo "$updates 📬"
+else
+	echo " 📭"
+fi

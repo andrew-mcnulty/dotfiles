@@ -1,0 +1,33 @@
+super + c
+	rofi -show ssh
+super + d
+	rofi -show run
+super + Return
+	$TERMINAL
+super + r
+	$TERMINAL -e $FILE
+super + i
+	$TERMINAL -e htop
+super + shift + w
+	$BROWSER
+
+super + shift + x
+	prompt "Shutdown computer?" "sudo -A shutdown -h now"
+super + shift + r
+	prompt "Reboot computer?" "sudo -A shutdown -r now"
+super + shift + l
+	prompt "Exit?" "killall xinit"
+super + x
+	pauseallmpv; slock
+XF86AudioMute
+	pulsemixer --toggle-mute && pkill -RTMIN+10 dwmblocks
+XF86AudioLowerVolume
+	pulsemixer --change-volume -5 && pkill -RTMIN+10 dwmblocks
+XF86AudioRaiseVolume
+	pulsemixer --change-volume +5 && pkill -RTMIN+10 dwmblocks
+XF86MonBrightnessDown
+	xbacklight -dec 5
+XF86MonBrightnessUp
+	xbacklight -inc 5
+Print
+	scrot

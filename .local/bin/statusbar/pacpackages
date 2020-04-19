@@ -1,0 +1,6 @@
+#!/bin/sh
+updates=$(yay -Qu | grep -v "\[ignored\]" | wc -l)
+if [ $updates -gt 0 ]
+then
+	echo "$updates 📦"
+fi
