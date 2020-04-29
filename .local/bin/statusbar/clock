@@ -1,4 +1,4 @@
 #!/bin/sh
 
-date '+%a %d %b %Y %H:%M'
+date '+%a %d %b %Y %H:%M:%S'
 

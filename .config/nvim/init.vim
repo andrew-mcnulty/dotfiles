@@ -13,16 +13,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'tpope/vim-commentary'
-"Plug 'ervandew/supertab'
-Plug 'dylanaraps/wal.vim'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
-colorscheme wal
-"set background=dark
-"let g:gruvbox_italic=1
-""let g:gruvbox_italicize_strings=1
-"set t_Co=256
-"let g:gruvbox_italic=1
 set noshowmode
 
 set tabstop=4

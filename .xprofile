@@ -1,11 +1,3 @@
 #!/bin/sh
-./fehbg
-wal -R &		# Set the colours
-sxhkd &			# Bind keys
 xset r rate 300 50 &
 setxkbmap -model classmate -layout gb -variant extd &
-unclutter &		# Remove mouse when idle
-xcompmgr &		# xcompmgr for transparency
-dunst &			# dunst for notifications
-xmodmap /home/asm/.Xmodmap &
-dwmblocks &
