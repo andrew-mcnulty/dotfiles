@@ -1,3 +1,4 @@
 #!/bin/sh
 xset r rate 300 50 &
-setxkbmap -model classmate -layout gb -variant extd &
+setxkbmap -layout gb &
+/home/asm/.local/bin/setrefresh &

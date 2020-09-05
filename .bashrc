@@ -14,7 +14,6 @@ alias f="$FILE" \
         grep="grep --color=auto" \
         diff="diff --color=auto" \
         lsp="yay -Qett --color=always | less" \
-        ffmpeg="ffmpeg -hide_banner" \
         rem="yay -Rns" \
         clean="yay -Rns $(yay -Qtdq) ;sudo paccache -rk1" \
         ls="exa -l -h --group-directories-first -s name --color=always" \

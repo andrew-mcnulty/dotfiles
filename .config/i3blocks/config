@@ -1,12 +1,12 @@
 command=~/.local/bin/statusbar/$BLOCK_NAME
 separator_block_width=15
 markup=none
-
+[temps]
+interval=1
 [volume]
 signal=10
-
-[battery]
-interval=5
+interval=once
 
 [clock]
 interval=1
+

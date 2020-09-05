@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cpu=$(sensors | grep Tctl | awk '{print $2 }')
+gpu=$(sensors | grep edge | awk '{print $2 }')
+mem=$(free -m | awk 'NR==2{printf "%.1fG", $3/1024 }')
+echo CPU $cpu GPU $gpu MEM $mem

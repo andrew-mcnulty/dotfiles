@@ -1,0 +1,5 @@
+#!/bin/sh
+xrandr --newmode "2560x1440@81.92"   330   2560 2608 2640 2720   1440 1442 1447 1481  +hsync -vsync &> /home/asm/.logs/xrandr
+xrandr --addmode DVI-D-0 "2560x1440@81.92" &>> /home/asm/.logs/xrandr
+xrandr --output DVI-D-0 --mode "2560x1440@81.92" &>> /home/asm/.logs/xrandr
+echo "Success" >> /home/asm/.logs/xrandr
